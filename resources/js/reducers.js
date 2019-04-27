@@ -8,7 +8,7 @@ export default (previousState = {}, action) => {
     switch (action.type) {
         case SET_USERNAME:
             newState = {
-                username: action.name
+                ...previousState, ...{ username: action.name }
             }
             break;
 

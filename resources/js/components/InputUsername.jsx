@@ -1,5 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import { setUsername } from '../actions';
 
 const mapStateToProps = (state) => {
     return {
@@ -9,10 +10,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         dispatchNameChange: (name) => {
-            dispatch({
-                type: 'SET_USERNAME',
-                name: name
-            });
+            dispatch(setUsername(name));
         }
     };
 };
