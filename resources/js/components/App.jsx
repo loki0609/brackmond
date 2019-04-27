@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import Welcome from './Welcome';
+import InputUsername from './InputUsername';
 
 class App extends React.Component {
     render() {
@@ -12,7 +13,8 @@ class App extends React.Component {
                 <div className="row">
                     <div className="col">&nbsp;</div>
                     <div className="col-8" style={{ backgroundColor: 'pink' }}>
-                        <Welcome names="Matts2"></Welcome>
+                        <Welcome />
+                        <InputUsername />
                     </div>
                     <div className="col">&nbsp;</div>
                 </div >
