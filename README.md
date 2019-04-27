@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Ensure you have the [prerequisites](##Prerequisites) installed.
+1. Ensure you have the [prerequisites](#Prerequisites) installed.
 1. Clone repository (project) to local machine
 1. `cd` into the project folder
 1. Run the following
