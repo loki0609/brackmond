@@ -12,5 +12,5 @@ const mix = require('laravel-mix');
  */
 
 mix.react('resources/js/app.jsx', 'public/js')
-    .extract(['react', 'react-dom'])
+    .extract(['react', 'react-dom', 'react-redux'])
     .sass('resources/sass/app.scss', 'public/css');
