@@ -15,7 +15,7 @@
 ```
     > php artisan serve
 ```
-1. Now visit <http://127.0.0.1:300> in the browser.
+1. Now visit <http://127.0.0.1:8000> in the browser.
 
 
 ## Prerequisites
