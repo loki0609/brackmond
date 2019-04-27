@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import Welcome from './Welcome';
 import InputUsername from './InputUsername';
+import Jobs from './Jobs';
 
 class App extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
                     <div className="col-8" style={{ backgroundColor: 'pink' }}>
                         <Welcome />
                         <InputUsername />
+                        <Jobs />
                     </div>
                     <div className="col">&nbsp;</div>
                 </div >

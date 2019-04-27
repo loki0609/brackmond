@@ -8,7 +8,38 @@ import { Provider } from 'react-redux';
 const store = createStore(
     Reducers,
     {
-        username: 'Ann'
+        username: 'Ann',
+        loggedIn: true,
+        clients: [
+            {
+                id: 2,
+                name: 'Emma',
+            },
+            {
+                id: 3,
+                name: 'Jackson',
+            }
+        ],
+        workers: [
+            {
+                id: 5,
+                name: 'Maggie',
+            }
+        ],
+        jobs: [
+            {
+                clientId: 2,
+                workerId: 5,
+                task: 'Brush Teeth',
+                status: 'unstarted',
+            },
+            {
+                clientId: 3,
+                workerId: 5,
+                task: 'Mow Jackson\'s Lawn',
+                status: 'finished',
+            }
+        ],
     },
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
