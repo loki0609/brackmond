@@ -15,6 +15,7 @@ class App extends React.Component {
                     <div className="col">&nbsp;</div>
                     <div className="col-8" style={{ backgroundColor: 'pink' }}>
                         <Welcome />
+                        <Jobs />
                         <InputUsername />
                         <Jobs />
                     </div>

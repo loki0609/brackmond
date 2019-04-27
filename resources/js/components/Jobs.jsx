@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import JobOverview from './JobOverview';
 
 const mapStateToProps = (state) => {
     return {
@@ -16,7 +17,7 @@ class Jobs extends React.Component {
     render() {
         return <ul>
             {this.props.jobs.map((job, idx) => {
-                return <li key={idx}>Task: {job.task} -- {job.status}</li>
+                return <JobOverview job={job} key={idx} />
             })}
         </ul>;
     }
