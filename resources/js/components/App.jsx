@@ -12,7 +12,7 @@ class App extends React.Component {
                 <div className="row">
                     <div className="col">&nbsp;</div>
                     <div className="col-8" style={{ backgroundColor: 'pink' }}>
-                        <Welcome name="Matts2"></Welcome>
+                        <Welcome names="Matts2"></Welcome>
                     </div>
                     <div className="col">&nbsp;</div>
                 </div >
