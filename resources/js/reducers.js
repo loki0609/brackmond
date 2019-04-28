@@ -1,4 +1,4 @@
-import { SET_USERNAME } from './actions';
+import { SET_USERNAME, SET_STATE } from './actions';
 
 /**
  * App State
@@ -10,6 +10,10 @@ export default (previousState = {}, action) => {
             newState = {
                 ...previousState, ...{ username: action.name }
             }
+            break;
+
+        case SET_STATE:
+            newState = action.newState;
             break;
 
         default:

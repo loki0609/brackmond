@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch, props) => {
 
 class JobOverview extends React.Component {
     render() {
-        return <li key={this.props.key}>Task: {this.props.job.task} -- {this.props.job.status}</li>;
+        return <li key={this.props.key}>Task: {this.props.job.name} -- {this.props.job.status}</li>;
     }
 }
 

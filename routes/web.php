@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/state', function() {
+    return json_encode(App\State::build());
+});
+Route::get('/jobs', function(){
+    return App\Job::all();
+});

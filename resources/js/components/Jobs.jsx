@@ -15,6 +15,7 @@ const mapDispatchToProps = (dispatch, props) => {
 
 class Jobs extends React.Component {
     render() {
+        console.log(this.props);
         return <ul>
             {this.props.jobs.map((job, idx) => {
                 return <JobOverview job={job} key={idx} />
