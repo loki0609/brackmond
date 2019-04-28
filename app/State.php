@@ -2,6 +2,10 @@
 
 namespace App;
 
+/**
+ * Model (not a Database-related one) for State data, to be returned to the
+ * front-end app
+ */
 class State {
     public static function build()
     {
